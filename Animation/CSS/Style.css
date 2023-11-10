@@ -1,0 +1,131 @@
+:root
+{
+    --main-purple-color: #00afcaf9;
+    --elements-background-color: #eeecfd;
+    --element-border-color: #e0e0e1;
+    --main-margin: 20px;
+    --main-padding: 30px;
+}
+
+
+body
+{
+    font-family: system-ui;
+    color: var(--main-purple-color);
+    padding: 0;
+    margin: 0;
+    background-color: #00161a;
+}
+
+.heading
+{
+    font-size: 16px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--elements-background-color);
+    height: 100px;
+    border-radius: 15px;
+    /* margin-bottom: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    background-color: #54b7c466;
+    color: #b9d2d2;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+.Interests
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border: .2px solid;
+    border-radius: 10px;
+    border-color: var(--element-border-color);
+    margin: 10px;
+    transition: 0.4s;
+    transform-origin: right bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Interests i
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-purple-color);
+    font-size: 30px;
+    /* margin-top: calc(var(--main-margin)*2); */
+}
+
+
+.container input
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark 
+{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: #eee;
+    transition: 0.4s;
+}
+
+ 
+ .Interests:hover
+{
+    background-color: #177fc934;
+    border-color: #00666d;
+}
+.checkmark:hover
+{
+    background-color:var(--main-purple-color);
+    /* padding: 20px;     */
+}
+/* When the checkbox is checked, add a blue background */
+
+
+
+
+.Interests label
+{
+    color: black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin-top: var(--main-margin)
+}
+
+#dynamic1
+{
+    display:none;
+}
+
+
+#dynamic2
+{
+    display:none;
+}
